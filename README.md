@@ -3,17 +3,17 @@ RoXtra is a quality management (QM) software that stores a large volume of files
 
 This project implements a solution to identify duplicate or similar files. Instead of relying on complex AI, it utilizes the existing metadata—specifically the file name and info tags—to compare documents. This provides a fast and reasonably reliable method for detecting copies.
 
-API Integration
+## API Integration
 The project interacts with the RoXtra API, whose official documentation and examples can be found on their [Github page](https://github.com/roXtra/PublicAPI). Their examples primarily use the [httpYac](https://marketplace.visualstudio.com/items?itemName=anweber.vscode-httpyac) and [httpBook](https://marketplace.visualstudio.com/items?itemName=anweber.httpbook) Visual Studio Code extensions.
 
 While useful for simple requests, these tools are less practical for building complex logic like loops and data processing. Therefore, this project is built using JavaScript and Node.js for a more powerful and programmable approach.
 
-Project Structure
+## Project Structure
 The code is organized into modules for better readability and maintainability. Many core functions are located in their own JavaScript files.
 
 For example:
 
 Auth1.js contains the authentication logic to retrieve a security token from the API server, which is required for all subsequent API calls.
 
-Using This Project as a Template
+## Using This Project as a Template
 You can use this repository as a template for your own RoXta API integrations. The modular structure makes it easy to understand, extend, and adapt the code to your specific needs.
