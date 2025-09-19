@@ -17,3 +17,16 @@ Auth1.js contains the authentication logic to retrieve a security token from the
 
 ## Using This Project as a Template
 You can use this repository as a template for your own RoXta API integrations. The modular structure makes it easy to understand, extend, and adapt the code to your specific needs.
+
+## Tips
+If you have typos in your Project you can get answers from your API-calls such as:
+
+{
+
+  "Description": "Ordner-/Akten-/Dateioperation nicht möglich",
+  
+  "ErrorID": 10100,
+  
+  "LongDescription": "Zugriffsrechte fehlen"
+  
+}
