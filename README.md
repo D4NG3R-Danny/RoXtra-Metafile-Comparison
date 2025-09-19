@@ -1,15 +1,19 @@
-# About the Software
-RoXtra is a QM-Software which stores a lot of files in its "Prozessmodul".
-In a big organisation such as a Hospital there are many redundant files created without any supervision.
-One Solution which does not involve any of those funky AIs is using the name and the info tags in the Metadescription of the file. This is used to compare it to other files and use it as a fast and somewhat reliable way to detect copies or similar files.
+# About the Software & Project
+RoXtra is a quality management (QM) software that stores a large volume of files within its "Prozessmodel" module. In a large organization, such as a hospital, this can lead to the unsupervised creation of numerous redundant files.
 
-The [Githubpage](https://github.com/roXtra/PublicAPI) from the Roxtra Gmbh for use of their API is using 
-[httpYac](https://marketplace.visualstudio.com/items?itemName=anweber.vscode-httpyac) and 
-[httpBook](https://marketplace.visualstudio.com/items?itemName=anweber.httpbook).
-Those two tools are not very usefull or handy for creating loops etc.
-That is why i decided to use Javascript and Nodejs as Satan intended.
+This project implements a solution to identify duplicate or similar files. Instead of relying on complex AI, it utilizes the existing metadata—specifically the file name and info tags—to compare documents. This provides a fast and reasonably reliable method for detecting copies.
 
-# Using my Project as a template
-Many functions are in their own js files for readability.
+API Integration
+The project interacts with the RoXtra API, whose official documentation and examples can be found on their [Github page](https://github.com/roXtra/PublicAPI). Their examples primarily use the [httpYac](https://marketplace.visualstudio.com/items?itemName=anweber.vscode-httpyac) and [httpBook](https://marketplace.visualstudio.com/items?itemName=anweber.httpbook) Visual Studio Code extensions.
 
+While useful for simple requests, these tools are less practical for building complex logic like loops and data processing. Therefore, this project is built using JavaScript and Node.js for a more powerful and programmable approach.
 
+Project Structure
+The code is organized into modules for better readability and maintainability. Many core functions are located in their own JavaScript files.
+
+For example:
+
+Auth1.js contains the authentication logic to retrieve a security token from the API server, which is required for all subsequent API calls.
+
+Using This Project as a Template
+You can use this repository as a template for your own RoXta API integrations. The modular structure makes it easy to understand, extend, and adapt the code to your specific needs.
