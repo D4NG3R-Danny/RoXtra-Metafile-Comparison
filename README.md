@@ -17,10 +17,13 @@ For example:
 
 **Auth1.js** contains the authentication logic to retrieve a security token from the API server, which is required for all subsequent API calls.
 
-**AllFiles.js** Takes IDs of folders from a local file (e.g. Folder.txt) and creates a txt-File with IDs of Files from those folders.
+**AllFiles.js** takes IDs of folders from a local file (e.g. Folder.txt) and creates a txt-File with IDs of Files from those folders.
 
-**AllFolders.js** Starts either at the root or specified folder and uses queue to get all IDs of folders depending on a depth/iteration parameter. Creates a Folder.txt to be used by AllFiles.js.
+**AllFolders.js** starts either at the root or specified folder and uses queue to get all IDs of folders depending on a depth/iteration parameter. Creates a Folder.txt to be used by AllFiles.js.
 
+**GetFileDetails.js** fetches the metainformation of any existing file given an ID. 
+
+**MetaDatenVergleich.js** takes the metainformation of GetFileDetails.js and uses Hammingdistance for comparison.
 
 ## Using This Project as a Template
 You can use this repository as a template for your own RoXta API integrations. The modular structure makes it easy to understand, extend, and adapt the code to your specific needs.
